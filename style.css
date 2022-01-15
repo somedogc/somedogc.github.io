@@ -1,58 +1,43 @@
+body {
+  background-color: rgb(170, 160, 140); /*set*/
+  padding-left: 20px; 
+}
+
 nav a {
     display: block;
-    padding: 0 0px;
     color: rgb(0, 0, 0);
-    font-size: 1.1em;
-    line-height: 20px;
     text-decoration: none;
   }
   nav a:hover {
-    background-color: rgb(20, 150, 150);
-  }
-  div {
-    margin: 5px 0 10px 20px;
-    padding-left: 13px;
-  }
-  nav div {
-    margin: 0;
-    background-color: rgb(50, 180, 180);
+    background-color: rgb(170, 160, 140); /*set*/
   }
   nav a {
     display: block;
-    padding: 0 10px;
     color: rgb(0, 0, 0);
-      font-size: 1.1em;
-      line-height: 20px;
-      text-decoration: none;
     }
     nav a:hover {
-      background-color: rgb(20, 150, 150);
-    }
-    ul, ol {
-      margin: 5px 0 10px 20px;
-      padding-left: 13px;
+      background-color: rgb(170, 160, 140); /*set*/
     }
     nav ul {
-      margin: 0;
-      background-color: rgb(50, 180, 180);
+      background-color: rgb(200, 190, 170); /*set (+30, +30, +30)*/
     }
     nav ul li {
        display: inline-block;
     }
+    ul li a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+    }
+
     ol {
-      background-color: rgb(50,180,180);
+      background-color: rgb(200, 190, 170); /*set (+30, +30, +30)*/
       width: 940px;
-      border: 5px solid rgb(30,150,150);
-      padding: 10px 30px;
-      margin: 20px;
+      border: 5px solid rgb(180, 160, 140); /*set (+10, +0, +0)*/
+      padding: 0px 30px;
     }
     ul {
-      background-color: rgb(50,180,180);
+      background-color: rgb(200, 190, 170); /*set (+30, +30, +30)*/
       width: 250px;
-      border: 5px solid rgb(30,150,150);
-      padding: 10px 30px;
-      margin: 20px;
-    }
-    h1 {
-      padding-left: 30px;
+      border: 5px solid rgb(180, 160, 140); /*set (+10, +0, +0)*/
+      padding: 0px 30px;
     }
