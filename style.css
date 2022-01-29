@@ -3,41 +3,40 @@ body {
   padding-left: 20px;
   font-size:18px
 }
+p img.TextIGImg {
+  width:13px;
+  height:13px;
+}
 h1 {
   font-size:23px
 }
 a {
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);/*a fucking zero*/
   text-decoration: none;
 }
-nav a {
-  display: block;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-nav a:hover {
-  background-color: rgb(170, 160, 140); /*set*/
-}
-nav a {
-  display: block;
-  color: rgb(0, 0, 0);
-}
-nav a:hover {
-  background-color: rgb(170, 160, 140); /*set*/
-}
-nav ul {
+a.button {
   background-color: rgb(200, 190, 170); /*set (+30, +30, +30)*/
-  display: inline-block;
 }
 ol {
   background-color: rgb(200, 190, 170); /*set (+30, +30, +30)*/
   width: 940px;
   border: 5px solid rgb(180, 160, 140); /*set (+10, +0, +0)*/
   padding: 0px 30px;
+  list-style: none
 }
 ul {
   background-color: rgb(200, 190, 170); /*set (+30, +30, +30)*/
   width: 250px;
   border: 5px solid rgb(180, 160, 140); /*set (+10, +0, +0)*/
   padding: 0px 30px;
+  list-style: none
+}
+div.left_right{
+  display: inline-block;
+}
+div.left_right div.left{
+  text-align: left;
+}
+div.left_right div.right{
+  text-align: right;
 }
