@@ -1,6 +1,5 @@
 body {
   background-color: rgb(170, 160, 140); /*set*/
-  padding-left: 20px;
   font-size:18px
 }
 p img.TextIGImg {
@@ -14,7 +13,7 @@ a {
   color: rgb(0, 0, 0);/*a fucking zero*/
   text-decoration: none;
 }
-a.button {
+nav a.button {
   background-color: rgb(200, 190, 170); /*set (+30, +30, +30)*/
 }
 ol {
@@ -22,7 +21,6 @@ ol {
   width: 940px;
   border: 5px solid rgb(180, 160, 140); /*set (+10, +0, +0)*/
   padding: 0px 30px;
-  list-style: none
 }
 ul {
   background-color: rgb(200, 190, 170); /*set (+30, +30, +30)*/
@@ -31,12 +29,26 @@ ul {
   padding: 0px 30px;
   list-style: none
 }
+div.box{
+  background-color: rgb(200, 190, 170); /*set (+30, +30, +30)*/
+  border: 5px solid rgb(180, 160, 140); /*set (+10, +0, +0)*/
+  padding: 0px 20px;
+}
 div.left_right{
-  display: inline-block;
+  display: flex;
+
 }
 div.left_right div.left{
   text-align: left;
+  border: 1px solid black;
+  
 }
+
 div.left_right div.right{
+  border: 1px solid black;
   text-align: right;
+}
+
+footer {
+  background-color: rgb(105, 105, 105);
 }
