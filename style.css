@@ -2,9 +2,13 @@ body {
   background-color: rgb(170, 160, 140); /*set*/
   font-size:18px
 }
-p img.TextIGImg {
+img.TextIGImg {
   width:13px;
   height:13px;
+}
+img.DT_icon {
+  width:40px;
+  height:40px;
 }
 h1 {
   font-size:23px
@@ -38,7 +42,7 @@ div.left_right{
   display: flex;
 
 }
-div.left_right div.left{
+/*div.left_right div.left{
   text-align: left;
   border: 1px solid black;
   
@@ -47,8 +51,10 @@ div.left_right div.left{
 div.left_right div.right{
   border: 1px solid black;
   text-align: right;
-}
+}*/
 
 footer {
   background-color: rgb(105, 105, 105);
+  font-size:10px;
+  line-height:5px
 }
