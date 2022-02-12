@@ -2,6 +2,8 @@ body {
   background-color: rgb(170, 160, 140); /*set*/
   font-size:18px;
   margin-left: 2.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 img.TextIGImg {
   width:13px;
