@@ -1,0 +1,6 @@
+User-agent: Yandex
+Disallow: /web/
+User-agent: *
+Allow: /
+
+Sitemap: https://g-c-the-dog.github.io/sitemap.xml
