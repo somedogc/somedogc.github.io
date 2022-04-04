@@ -23,9 +23,16 @@ p img.DT_icon {
   width:40px;
   height:40px;
 }
+p.hint {
+  font-size: 12px;
+  line-height: 0px;
+}
 a {
   text-decoration: none;
   color: black;
+}
+a.chan {
+  color: #789922;
 }
 ul {
   list-style: none;
