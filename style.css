@@ -53,7 +53,7 @@ header img.logo{
   border-radius: 100%;
 }
 header div.box {
-  margin-left: calc(50% - 586px);
+  margin-left: calc(360px);
   
   display: inline;
   padding: 5px 10px;
