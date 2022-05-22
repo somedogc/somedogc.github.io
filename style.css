@@ -74,7 +74,7 @@ main {
 /*Footer's style*/
 footer
 {
-  height: 100vh;
+  height: calc(100vh + 150px);
   padding-left: calc(50% - 1000px / 2);
   padding-top: 50px;
   width: 100%;
