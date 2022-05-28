@@ -25,36 +25,117 @@
   <main>
     <div class="box">
       <h1>The great Minecraft commands tutorial and list.</h1>
-      <p>Also the entire page will be focused on the post 1.13 Java version of the game, so, Bedrock users, I'm sorry.</p>
+      <p>Also, the entire page will be focused on the post 1.13 Java version of the game, so, Bedrock users, I'm sorry.</p>
     </div>
     <div class="box">
       <h1>The one and only - The <a href="https://minecraft.fandom.com/wiki/Commands/teleport" target="_blank">/tp</a> command.</h1>
       <p>It allows you to teleport youself or any entity to a certain location, facing a certain block.</p>
       <p>The syntax is very straightforward:</p>
-      <p id="jsVar" style="display: none;"></p>
       <p>
-        <a onclick="if(document.getElementById('tp_0').style.display == 'none') {document.getElementById('tp_0').style.display = 'block';} else {document.getElementById('tp_0').style.display = 'none';}">/tp</a> 
-        <a onclick="if(document.getElementById('tp_1').style.display == 'none') {document.getElementById('tp_1').style.display = 'block';} else {document.getElementById('tp_1').style.display = 'none';}">@s</a> 
-        <a onclick="if(document.getElementById('tp_2').style.display == 'none') {document.getElementById('tp_2').style.display = 'block';} else {document.getElementById('tp_2').style.display = 'none';}">x y z</a> 
-        <a onclick="if(document.getElementById('tp_3').style.display == 'none') {document.getElementById('tp_3').style.display = 'block';} else {document.getElementById('tp_3').style.display = 'none';}">facing x y z</a>
+        <a onclick="
+          if(document.getElementById('tp_0').style.display == 'none')
+            document.getElementById('tp_0').style.display = 'block';
+          else
+            document.getElementById('tp_0').style.display = 'none';
+        ">/tp</a> 
+        <a onclick="
+          if(document.getElementById('tp_1').style.display == 'none')
+            document.getElementById('tp_1').style.display = 'block';
+          else
+            document.getElementById('tp_1').style.display = 'none';
+            document.getElementById('tp_1.0').style.display = 'none';
+            document.getElementById('tp_1.1').style.display = 'none';
+            document.getElementById('tp_1.1.0').style.display = 'none';
+            document.getElementById('tp_1.1.1').style.display = 'none';
+            document.getElementById('tp_1.1.2').style.display = 'none';
+        ">@s</a> 
+        <a onclick="
+          if(document.getElementById('tp_2').style.display == 'none')
+            document.getElementById('tp_2').style.display = 'block';
+          else
+            document.getElementById('tp_2').style.display = 'none';
+        ">x y z</a> 
+        <a onclick="
+          if(document.getElementById('tp_3').style.display == 'none')
+            document.getElementById('tp_3').style.display = 'block';
+          else
+            document.getElementById('tp_3').style.display = 'none';
+        ">facing x y z</a>
       </p>
       <p class="hint">You can click text for extra information about it's components.</p>
-      <p id="tp_0" style="display: none;"><a class="chan">>>/tp</a>. The command itself</p>
-      <p id="tp_1" style="display: none;"><a class="chan">>>@s</a>. Teleported entity, can be 
-        <a onclick="if(document.getElementById('tp_1.0').style.display == 'none') {document.getElementById('tp_1.0').style.display = 'block';} else {document.getElementById('tp_1.0').style.display = 'none';}">@e or @a... etc</a> with 
-        <a onclick="if(document.getElementById('tp_1.1').style.display == 'none') {document.getElementById('tp_1.1').style.display = 'block';} else {document.getElementById('tp_1.1').style.display = 'none';}">specifications</a> to tp a certian entity.</p>
-        <p id="tp_1.0" style="display: none;"><a class="chan">>>@e or @a...</a> can be replaced by @e - every entity, @a - every player, @s - the command sender, @p - closest player to the command block/commnad sender</p>
+      <p id="tp_0" style="display: none;"><a class="chan" onclick="
+        document.getElementById('tp_0').style.display = 'none';
+      ">>>/tp</a>. The command itself</p>
+      <p id="tp_1" style="display: none;"><a class="chan" onclick="
+        document.getElementById('tp_1').style.display = 'none';
+        document.getElementById('tp_1.0').style.display = 'none';
+        document.getElementById('tp_1.1').style.display = 'none';
+        document.getElementById('tp_1.1.0').style.display = 'none';
+        document.getElementById('tp_1.1.1').style.display = 'none';
+        document.getElementById('tp_1.1.2').style.display = 'none';
+      ">>>@s</a>. Teleported entity, can be 
+        <a onclick="
+            if(document.getElementById('tp_1.0').style.display == 'none')
+              document.getElementById('tp_1.0').style.display = 'block';
+            else
+              document.getElementById('tp_1.0').style.display = 'none';
+            ">@e or @a... etc</a> with 
+        <a onclick="
+          if(document.getElementById('tp_1.1').style.display == 'none')
+            document.getElementById('tp_1.1').style.display = 'block';
+          else
+            document.getElementById('tp_1.1').style.display = 'none';
+        ">specifications</a> to tp a certian entity.</p>
+        <p id="tp_1.0" style="display: none;"><a class="chan" onclick="
+          document.getElementById('tp_1.0').style.display = 'none';
+        ">>>@e or @a...</a> can be replaced by @e - every entity, @a - every player, @s - the command sender, @p - closest player to the command block/commnad sender</p>
         <div id="tp_1.1" style="display: none; line-height: 16px;">
-          <p><a class="chan">>>specifications</a>. You can narrow the target list by using a filter, such as 
-            <a onclick="if(document.getElementById('tp_1.1.0').style.display == 'none') {document.getElementById('tp_1.1.0').style.display = 'block';} else {document.getElementById('tp_1.1.0').style.display = 'none';}">@e[type=minecraft:mob_name]</a>, 
-            <a onclick="if(document.getElementById('tp_1.1.1').style.display == 'none') {document.getElementById('tp_1.1.1').style.display = 'block';} else {document.getElementById('tp_1.1.1').style.display = 'none';}">@e[distance=x]</a>, 
-            <a onclick="if(document.getElementById('tp_1.1.2').style.display == 'none') {document.getElementById('tp_1.1.2').style.display = 'block';} else {document.getElementById('tp_1.1.2').style.display = 'none';}">@e[limit=x]</a></p>          
-          <p id="tp_1.1.0" style="display: none;"><a class="chan">>>@e[type=minecraft:mob_name]</a> The "mob_name" can be replaced by any mob's name, like "pig" or "cow", or "villager", or "creeper"... you get the point.</p>
-          <p id="tp_1.1.1" style="display: none"><a class="chan">>>@e[distance=x]</a>. Right now the command will tp any entity at distance "x" from the sender. If replaced with "..x", the command will tp any entity closer, than x. If replaced with "x..", any entity farther, than x. And, finally, if replaced with "x..y", the command will tp any entity farther, than x, but closer, than y, from the sender.</p>
-          <p id="tp_1.1.2" style="display: none;"><a class="chan">>>@e[limit=x]</a>. The command will be used on x amount of entities. For example, if x set to 0, the comand will do literally nothing (will tp zero entities).</p>
+          <p><a class="chan" onclick="
+            document.getElementById('tp_1.1').style.display = 'none';
+            document.getElementById('tp_1.1.0').style.display = 'none';
+            document.getElementById('tp_1.1.1').style.display = 'none';
+            document.getElementById('tp_1.1.2').style.display = 'none';
+          ">>>specifications</a>. You can narrow the target list by using a filter, such as 
+            <a onclick="
+              if(document.getElementById('tp_1.1.0').style.display == 'none')
+                document.getElementById('tp_1.1.0').style.display = 'block';
+              else
+                document.getElementById('tp_1.1.0').style.display = 'none';
+              ">@e[type=minecraft:mob_name]</a>, 
+            <a onclick="
+              if(document.getElementById('tp_1.1.1').style.display == 'none')
+                document.getElementById('tp_1.1.1').style.display = 'block';
+              else
+                document.getElementById('tp_1.1.1').style.display = 'none';
+              ">@e[distance=x]</a>, 
+            <a onclick="
+              if(document.getElementById('tp_1.1.2').style.display == 'none')
+                document.getElementById('tp_1.1.2').style.display = 'block';
+              else
+                document.getElementById('tp_1.1.2').style.display = 'none';
+            ">@e[limit=x]</a></p>          
+          <p id="tp_1.1.0" style="display: none;"><a class="chan" onclick="
+            document.getElementById('tp_1.1.0').style.display = 'none';
+          ">>>@e[type=minecraft:mob_name]</a> The "mob_name" can be replaced by any mob's name, like "pig" or "cow", or "villager", or "creeper"... you get the point.</p>
+          <p id="tp_1.1.1" style="display: none"><a class="chan" onclick="
+            document.getElementById('tp_1.1.1').style.display = 'none';
+          ">>>@e[distance=x]</a>. Right now the command will tp any entity at distance "x" from the sender. If replaced with "..x", the command will tp any entity closer, than x. If replaced with "x..", any entity farther, than x. And, finally, if replaced with "x..y", the command will tp any entity farther, than x, but closer, than y, from the sender.</p>
+          <p id="tp_1.1.2" style="display: none;"><a class="chan" onclick="
+            document.getElementById('tp_1.1.2').style.display = 'none';
+          ">>>@e[limit=x]</a>. The command will be used on x amount of entities. For example, if x set to 0, the comand will do literally nothing (will tp zero entities).</p>
         </div>
-      <p id="tp_2" style="display: none;"><a class="chan">>>x y z</a>. The coords it's being tp'd to</p>
-      <p id="tp_3" style="display: none;"><a class="chan">>>facing x y z</a>. Makes the tp'd entity face the specified coords</p>
+      <p id="tp_2" style="display: none;"><a class="chan" onclick="
+        document.getElementById('tp_2').style.display = 'none';
+      ">>>x y z</a>. The coords it's being tp'd to</p>
+      <p id="tp_3" style="display: none;"><a class="chan" onclick="
+        document.getElementById('tp_3').style.display = 'none';
+      ">>>facing x y z</a>. Makes the tp'd entity face the specified coords</p>
+    </div>
+    <div class="box">
+      <h1>The <a href="https://minecraft.fandom.com/wiki/Commands/setblock" target="_blank">setblock</a> command.</h1>
+      <p>Places a block at sertain coordinate.</p>
+      <p>The syntax is as follows:</p>
+      <p>/setblock x y z minecraft:block_name</p>
     </div>
   </main>
   <footer>
