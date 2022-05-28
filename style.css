@@ -43,8 +43,11 @@ ul {
 header {
   width: 100%;
   height: 150px;
-  padding-left: calc(50% - 1000px / 2);
   background: linear-gradient(180deg,#94846E 100px, rgba(148, 132, 110, 0) 150px);
+}
+header div.headerContent {
+  width: 100px;
+  padding-left: calc(50% - 1000px / 2);
 }
 header img.logo{
   width: 86px;
@@ -78,11 +81,14 @@ main {
 footer
 {
   height: calc(100vh + 150px);
-  padding-left: calc(50% - 1000px / 2);
   padding-top: 50px;
   width: 100%;
   line-height: 5px;
   background: linear-gradient(180deg, #847561 0px, #675B4C 50px);
+}
+footer div.footerContent{
+  padding-left: calc(50% - 1000px / 2);
+  width: 1000px;
 }
 footer p {
   font-size:10px;
