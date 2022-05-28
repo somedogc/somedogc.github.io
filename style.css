@@ -72,7 +72,7 @@ header div.box {
 /*Main\body's style*/
 main {
   width: 1000px;
-  margin-left: calc(50% - 1010px/2);
+  margin-left: calc(50% - 1010px / 2);
   background-color: #A89E8A;
   border: 5px solid #9D927B;
   padding: 20px;
@@ -88,7 +88,7 @@ footer
   background: linear-gradient(180deg, #847561 0px, #675B4C 50px);
 }
 footer div.footerContent{
-  padding-left: calc(50% - 1000px / 2);
+  padding-left: calc(50% - 1010px / 2);
   width: 1000px;
 }
 footer p {
