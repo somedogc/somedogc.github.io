@@ -1,3 +1,14 @@
+/*Style and composition dump
+*#847561 - bg Page color
+*#94846E - Bg Header color
+*#A89E8A - Bg Main color
+*#675B4C - Bg Footer color
+*
+*#333333 - General text color
+*#000000 - Link text color
+*#789922 - Chan link color
+*/
+
 /*General stuff's style*/
 body {
   margin: 0px;
@@ -14,6 +25,9 @@ div.box
 h1 {
   font-size:23px;
 }
+p {
+  color: #333333;
+}
 p img {
   width:13px;
   height:13px;
@@ -22,18 +36,13 @@ p img.DT_icon {
   width:40px;
   height:40px;
 }
-p.hint {
-  font-size: 12px;
-  line-height: 0px;
-}
 a {
-  text-decoration: none;
-  color: black;
+  color: #000000;
+  text-decoration: underline;
 }
 a.chan {
-  background-color: rgba(0, 0, 0, 0.25);
-  border: 2px solid #9D927B;
   color: #789922;
+  text-decoration: none;
 }
 ul {
   list-style: none;
