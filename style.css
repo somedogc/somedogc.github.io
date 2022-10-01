@@ -1,4 +1,5 @@
-/*Style and composition dump
+/*
+*Style and composition dump
 *#847561 - bg Page color
 *#94846E - Bg Header color
 *#A89E8A - Bg Main color
@@ -20,7 +21,8 @@ div.box
 {
   background-color: #A89E8A;
   border: 5px solid #9D927B;
-  padding: 0px 20px
+  border-radius: 20px;
+  padding: 0px 20px;
 }
 h1 {
   font-size:23px;
@@ -73,10 +75,9 @@ header div.box {
   float: right;
   
   display: inline;
-  padding: 5px 10px;
+  padding: 15px 20px;
   background-color: #A89E8A;
   border: 5px solid #9D927B;
-  border-radius: 5%;
 }
 
 /*Main\body's style*/
@@ -85,7 +86,8 @@ main {
   margin-left: calc(50% - 1010px / 2);
   background-color: #A89E8A;
   border: 5px solid #9D927B;
-  padding: 20px;
+  border-radius: 50px;
+  padding: 25px;
 }
 
 /*Footer's style*/
