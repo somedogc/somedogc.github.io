@@ -1,26 +1,30 @@
-/*
-*Style and composition dump
-*#847561 - bg Page color
-*#94846E - Bg Header color
-*#A89E8A - Bg Main color
-*#675B4C - Bg Footer color
-*
-*#333333 - General text color
-*#000000 - Link text color
-*#789922 - Chan link color
-*/
+/*Vars*/
+:root {
+  --widthPc: 1010px;
+  --widthMob: 300px;
+
+  --colorBgBody: #847561;
+  --colorBgHeader: #94846E;
+  --colorBgMain: #A89E8A;
+  --colorBgFooter: #675B4C;
+
+  --colorBorder: #9D927B;
+
+  --colorTextGeneral: #333333;
+  --colorTextLink: #000000;
+  --colorTextChan: #789922;
+}
 
 /*General stuff's style*/
 body {
   margin: 0px;
-  background-color:#847561;
+  background-color: var(--colorBgBody);
   font-size:18px;
   line-height: 16px;
 }
 div.box
 {
-  background-color: #A89E8A;
-  border: 5px solid #9D927B;
+  border: 5px solid var(--colorBorder);
   border-radius: 20px;
   padding: 0px 20px;
 }
@@ -28,7 +32,7 @@ h1 {
   font-size:23px;
 }
 p {
-  color: #333333;
+  color: var(--colorTextGeneral);
 }
 p img {
   width:13px;
@@ -39,11 +43,11 @@ p img.DT_icon {
   height:40px;
 }
 a {
-  color: #000000;
+  color: var(--colorTextLink);
   text-decoration: underline;
 }
 a.chan {
-  color: #789922;
+  color: var(--colorTextChan);
   text-decoration: none;
 }
 ul {
@@ -53,55 +57,53 @@ ul {
 
 /*Header's style*/
 header {
-  width: 100%;
   height: 150px;
-  background: linear-gradient(180deg,#94846E 100px, rgba(148, 132, 110, 0) 150px);
+  background: linear-gradient(180deg, var(--colorBgHeader) 100px, var(--colorBgBody) 150px);
 }
 header div.headerContent {
   padding-top: 20px;
-  width: 100px;
-  padding-left: calc(50% - 1010px / 2);
+  padding-left: calc(50% - var(--widthPc) / 2);
 }
 header img.logo{
+  float: left;
+
   width: 86px;
   height: 86px;
-  border: 5px solid #9D927B;
-  border-radius: 100%;
-  float: left;
+  border: 5px solid var(--colorBorder);
+  border-radius: 50%;
 }
 header div.box {
-  margin-top: calc((86px - (10px + 18px) / 2) / 2);
-  margin-right: calc(100% - 1050px);
   float: right;
+  margin-top: calc(86px / 4);
+  margin-right: calc(100% - (var(--widthPc) + 40px));
   
-  display: inline;
   padding: 15px 20px;
-  background-color: #A89E8A;
-  border: 5px solid #9D927B;
+  background-color: var(--colorBgMain);
 }
 
 /*Main\body's style*/
 main {
-  width: 1000px;
-  margin-left: calc(50% - 1010px / 2);
-  background-color: #A89E8A;
-  border: 5px solid #9D927B;
-  border-radius: 50px;
+  width: var(--widthPc);
+  margin-left: calc(50% - var(--widthPc) / 2);
   padding: 25px;
+
+  background-color: var(--colorBgMain);
+
+  border: 5px solid var(--colorBorder);
+  border-radius: 50px;
 }
 
 /*Footer's style*/
 footer
 {
-  height: calc(100vh + 150px);
+  height: 100vh;
   padding-top: 70px;
-  width: 100%;
   line-height: 5px;
-  background: linear-gradient(180deg, #847561 0px, #675B4C 50px);
+  background: linear-gradient(180deg, var(--colorBgBody) 0px, var(--colorBgFooter) 50px);
 }
 footer div.footerContent{
-  padding-left: calc(50% - 1010px / 2);
-  width: 1000px;
+  padding-left: calc(50% - var(--widthPc) / 2);
+  width: var(--widthPc);
 }
 footer p {
   font-size:10px;
@@ -116,4 +118,29 @@ footer div.footer_array {
 footer div.box {
   background-color: #756857;
   border: 5px solid #6D6050;
+}
+
+
+@media (max-width:1020px) {
+  body {
+  line-height: 18px;
+  }
+  header div.headerContent {
+    padding-left: calc(50% - var(--widthMob) / 2);
+  }
+  header div.box {
+    margin-right: calc(100% - (var(--widthMob) + 40px));
+  }
+  main {
+    width: var(--widthMob);
+    margin-left: calc(50% - var(--widthMob) / 2);
+  }
+  footer div.footerContent{
+    padding-left: calc(50% - var(--widthMob) / 2);
+    width: var(--widthMob);
+  }
+  
+footer div.box {
+  line-height:10px;
+}
 }
