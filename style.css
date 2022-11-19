@@ -1,6 +1,7 @@
 /*Vars*/
 :root {
   --widthPc: 1010px;
+  --mainPading: 35px;
 
   --colorBgBody: #847561;
   --colorBgHeader: #94846E;
@@ -61,7 +62,7 @@ header {
 }
 header div.headerContent {
   padding-top: 20px;
-  padding-left: calc(50% - var(--widthPc) / 2);
+  padding-left: calc(50% - var(--widthPc) / 2 - var(--mainPading));
 }
 header img.logo{
   float: left;
@@ -73,8 +74,8 @@ header img.logo{
 }
 header div.box {
   float: right;
-  margin-top: calc(86px / 4);
-  margin-right: calc(100% - (var(--widthPc) + 45px));
+  margin-top: calc((86px - 46px)/ 2);
+  margin-right: calc(50% - var(--widthPc) / 2 + 40px);
   
   padding: 15px 20px;
   background-color: var(--colorBgMain);
@@ -83,7 +84,7 @@ header div.box {
 /*Main\body's style*/
 main {
   width: var(--widthPc);
-  margin-left: calc(50% - (var(--widthPc) + 35px) / 2);
+  margin-left: calc(50% - var(--widthPc) / 2 - var(--mainPading));
   padding: 25px;
 
   background-color: var(--colorBgMain);
@@ -95,7 +96,7 @@ main {
 /*Footer's style*/
 footer
 {
-  height: 100vh;
+  height: max(calc(100vh - 1834px),150px);
   padding-top: 70px;
   line-height: 5px;
   background: linear-gradient(180deg, var(--colorBgBody) 0px, var(--colorBgFooter) 50px);
@@ -111,38 +112,35 @@ footer h1 {
   font-size:14px;
 }
 footer div.footer_array {
-  display: inline;
-  display: flex;
+  display: inline-flex;
 }
 footer div.box {
   background-color: #756857;
   border: 5px solid #6D6050;
 }
 
-
-@media (max-width: 1010px) {
+@media (max-width: 1100px) {
   :root {
-    --widthMob: calc(100% - 100px);
+    --widthMob: calc(100% - 60px);
   }
   body {
   line-height: 18px;
   }
 
   header div.headerContent {
-    padding-left: calc(50% - var(--widthMob) / 2);
+    padding-left: 20px;
   }
   header div.box {
-    margin-right: calc(100% - (var(--widthMob) + 40px));
+    margin-right: 20px;
   }
 
   main {
     width: var(--widthMob);
-    margin-left: calc(50% - var(--widthMob) / 2);
+    margin-left: 20px;
   }
 
   footer div.footerContent{
-    padding-left: calc(50% - var(--widthMob) / 2);
-    width: var(--widthMob);
+    padding-left: 20px;
   }
   footer div.box {
     line-height:10px;
