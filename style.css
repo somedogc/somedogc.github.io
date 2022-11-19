@@ -75,7 +75,7 @@ header img.logo{
 header div.box {
   float: right;
   margin-top: calc(86px / 4);
-  margin-right: calc(100% - (var(--widthPc) + 40px));
+  margin-right: calc(100% - (var(--widthPc) + 45px));
   
   padding: 15px 20px;
   background-color: var(--colorBgMain);
@@ -84,7 +84,7 @@ header div.box {
 /*Main\body's style*/
 main {
   width: var(--widthPc);
-  margin-left: calc(50% - var(--widthPc) / 2);
+  margin-left: calc(50% - (var(--widthPc) + 35px) / 2);
   padding: 25px;
 
   background-color: var(--colorBgMain);
@@ -125,22 +125,24 @@ footer div.box {
   body {
   line-height: 18px;
   }
+  
   header div.headerContent {
     padding-left: calc(50% - var(--widthMob) / 2);
   }
   header div.box {
     margin-right: calc(100% - (var(--widthMob) + 40px));
   }
+
   main {
     width: var(--widthMob);
     margin-left: calc(50% - var(--widthMob) / 2);
   }
+
   footer div.footerContent{
     padding-left: calc(50% - var(--widthMob) / 2);
     width: var(--widthMob);
   }
-  
-footer div.box {
-  line-height:10px;
-}
+  footer div.box {
+    line-height:10px;
+  }
 }
