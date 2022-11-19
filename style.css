@@ -1,7 +1,6 @@
 /*Vars*/
 :root {
   --widthPc: 1010px;
-  --widthMob: 300px;
 
   --colorBgBody: #847561;
   --colorBgHeader: #94846E;
@@ -121,11 +120,14 @@ footer div.box {
 }
 
 
-@media (max-width:1020px) {
+@media (max-width: 1010px) {
+  :root {
+    --widthMob: calc(100% - 100px);
+  }
   body {
   line-height: 18px;
   }
-  
+
   header div.headerContent {
     padding-left: calc(50% - var(--widthMob) / 2);
   }
