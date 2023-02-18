@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tst</title>
+</head>
+<body>
+    <input type="text" id="inp" oninput="f()">
+    <p id="p"></p>
+    <script>
+        const para = document.getElementById("p");
+        para.style.borderRadius = 10;
+        var inp = document.getElementById("inp");
+
+        function f()
+        {
+            para.style.fontSize = (inp.value.length + 10).toString() + "px";
+            para.innerHTML = inp.value;
+        }
+    </script>
+</body>
+</html>
